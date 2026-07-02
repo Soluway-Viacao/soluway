@@ -1,3 +1,29 @@
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -117,13 +143,11 @@ a {
 ========================= */
 
 .hero {
+  min-height: calc(100vh - 84px);
+  display: flex;
+  align-items: center;
   position: relative;
-  height: 750px;
-  min-height: 750px;
-  display: grid;
-  grid-template-columns: 36% 27% 37%;
   overflow: hidden;
-  background: #ffffff;
 }
 
 /* Fundo com ônibus ocupando toda a hero */
@@ -453,7 +477,7 @@ a {
 ========================= */
 
 .services {
-  margin-top: 70px;
+  margin-top: 50px;
   padding: 55px 54px 58px;
   background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
 }
@@ -706,12 +730,12 @@ a {
   padding-bottom: 100px;
 }
 
-.hero-content,
-.hero-container,
-.hero-wrapper {
-  height: auto !important;
-  min-height: auto !important;
-  overflow: visible !important;
+.container,
+.hero-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
 }
 
 .hero-stats,
@@ -746,4 +770,11 @@ a {
 .btn-voltar-home:hover {
   background: #f5a800;
   color: #001b3a;
+}
+
+@media (max-width: 768px) {
+  .container,
+  .hero-container {
+    padding: 0 20px;
+  }
 }
