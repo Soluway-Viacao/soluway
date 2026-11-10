@@ -778,3 +778,32 @@ a {
     padding: 0 20px;
   }
 }
+/* Ajustes pontuais na transição e nos cartões de soluções. */
+.hero {
+  padding-bottom: 24px;
+}
+.services {
+  margin-top: 0;
+  padding-top: 40px;
+  padding-bottom: 48px;
+}
+.service-card h3 {
+  line-height: 1.25;
+  min-height: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 981px) {
+  .hero {
+    min-height: 750px;
+  }
+}
+@media (max-width: 620px) {
+  .service-card h3 {
+    min-height: 0;
+  }
+  .services {
+    padding-top: 34px;
+  }
+}
