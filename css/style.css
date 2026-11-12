@@ -238,7 +238,7 @@ a {
   display: flex;
   align-items: center;
   gap: 14px;
-  color: var(--gold);
+  color: #996600;
   font-size: 15px;
   font-weight: 900;
   margin-bottom: 22px;
@@ -266,7 +266,7 @@ a {
 }
 
 .hero h1 strong {
-  color: var(--gold);
+  color: #996600;
 }
 
 .hero p {
